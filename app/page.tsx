@@ -32,8 +32,8 @@ export default function Page() {
   const [streamData, setStreamData] = useState<StreamData | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [prompt, setPrompt] = useState(PROMPT_PRESETS[0].prompt);
-  const [negativePrompt, setNegativePrompt] = useState(
+  const [prompt, setPrompt] = useState<string>(PROMPT_PRESETS[0].prompt);
+  const [negativePrompt, setNegativePrompt] = useState<string>(
     PROMPT_PRESETS[0].negativePrompt ?? ""
   );
 
